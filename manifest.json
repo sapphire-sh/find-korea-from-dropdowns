@@ -1,0 +1,19 @@
+{
+	"name": "Find Korea from Dropdowns",
+	"description": "Automatically finds Korea from html select tags (dropdowns) with right-click",
+	"version": "1.0",
+	"permissions": [
+		"<all_urls>"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"script.js"
+			]
+		}
+	],
+	"manifest_version": 2
+}
