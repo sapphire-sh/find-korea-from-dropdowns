@@ -19,7 +19,7 @@ document.addEventListener('contextmenu', (e) => {
 
 	if(options.length === 0) {
 		options = Array.from(select.options).map((e, i) => {
-			let match = e.textContent.match(/korea|한국|대한민국|韓國|大韓民國|韓国|大韓民国|韩国|大韩民国/i);
+			let match = e.textContent.match(/kr|kor|korea|한국|대한민국|韓國|大韓民國|韓国|大韓民国|韩国|大韩民国/i);
 			if(match !== null && e.textContent.match(/north|democratic/i) !== null) {
 				match = null;
 			}
